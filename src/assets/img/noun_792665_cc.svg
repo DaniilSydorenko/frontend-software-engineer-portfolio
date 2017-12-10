@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 53.012499999999996" x="0px" y="0px">
+  <title>Scroll down2</title>
+  <g data-name="Layer 2">
+    <g data-name="Layer 1">
+      <path
+        d="M12,32A12,12,0,0,1,0,20V12a12,12,0,0,1,24,0v8A12,12,0,0,1,12,32ZM12,2A10,10,0,0,0,2,12v8a10,10,0,0,0,20,0V12A10,10,0,0,0,12,2Z" fill="#ffffff"/>
+      <path d="M12,42.41,6.34,36.76a1,1,0,0,1,1.41-1.41L12,39.59l4.24-4.24a1,1,0,0,1,1.41,1.41Z" fill="#ffffff"/>
+      <path d="M12,13a1,1,0,0,1-1-1V6a1,1,0,0,1,2,0v6A1,1,0,0,1,12,13Z"  fill="#ffffff"/>
+    </g>
+  </g>
+</svg>

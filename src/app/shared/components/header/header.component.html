@@ -1,0 +1,12 @@
+<header class="header animated">
+    <nav class="nav-transparent flex-box">
+        <div class="logo-name">
+            <p>D<span>aniil Sydorenko</span></p>
+        </div>
+        <div id="nav-icon2" class="menu-btn-wrapper" (click)="toggleMenu($event)" [ngClass]="{ 'open': state }">
+            <span class="menu-btn-line" *ngFor="let n of buttonLines"></span>
+        </div>
+    </nav>
+</header>
+
+<app-menu [state]="state" (stateEmitter)="toggleMenu($event)"></app-menu>

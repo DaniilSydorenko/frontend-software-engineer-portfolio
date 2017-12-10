@@ -1,0 +1,198 @@
+{
+  "projects": [
+    {
+      "path": "one_web",
+      "side": "right",
+      "url": "https://www.allianz.pl/dla-ciebie/",
+      "data": {
+        "title": "Components for commercial CMS",
+        "role": "Front-end Developer",
+        "description": "This is Internal commercial CMS for web-pages building. All internal product and web-sites of big European insurance company should have the same style and structure. Therefore all web-sites were built on components of this CMS.",
+        "responsibilities": "Front-end development for huge commercial CMS",
+        "techs": "JavaScript, AngularJS, jQuery, JSON, Freemarker template, LESS, Flex"
+      }
+    },
+    {
+      "path": "flex_mix",
+      "side": "left",
+      "url": "http://daniilsydorenko.github.io/flex-mix/",
+      "data": {
+        "title": "Flex-mix",
+        "role": "Creator, Front-end Developer",
+        "description": "Flex-mix has all needed functionality for building web application from scratch. It is my own solution for front-end development. It`s sass based boilerplate with grid system that based on flex technology. Sass structure is based on 7-1 architecture pattern(https://github.com/HugoGiraudel/sass-boilerplate). Responsive grid is based on Flexbox Grid(http://flexboxgrid.com/). Automation tools: Gulp. Other libraries: jQuery 2.2.3, Wow.js, modernizr.",
+        "responsibilities": "Whole project creation. GitHub repository, documents, whole development",
+        "techs": "JavaScript, HTML5, SASS, Flex, Gulp, NPM, Bower"
+      }
+    },
+    {
+      "path": "i_sport",
+      "side": "right",
+      "url": "https://i-sport.pl/",
+      "data": {
+        "title": "I-sport",
+        "role": "Front-end Developer",
+        "description": "Workouts programs designed by the coaches in Poland. Each workout contains videos about and comments. User can get a coach just for himself, which will support the implementation of his training or create an individual diet tailored to his activity. Also user can keep track of training and execute training plan in the framework of the 5 sport disciplines.",
+        "responsibilities": "Converting PSD to HTML&CSS, responsive web design",
+        "techs": "ASP.NET Razor, Bootstrap, JavaScript, jQuery"
+      }
+    },
+    {
+      "path": "tapon_fb_app",
+      "side": "left",
+      "url": "https://www.facebook.com/TapMoreGetMore/app/371913996253131/",
+      "data": {
+        "title": "Tapon - Facebook Application",
+        "role": "Front-end Developer",
+        "description": "Tapon.pl Facebook application",
+        "responsibilities": "Front-end development",
+        "techs": "HTML5, CSS3, JavaScript, jQuery, Facebook Development Tools"
+      }
+    },
+    {
+      "path": "wikendo",
+      "side": "right",
+      "url": "http://wikendo.pl/",
+      "data": {
+        "title": "Wikendo",
+        "role": "Front-end Developer",
+        "description": "Web site for company Wikendo",
+        "responsibilities": "Creating full responsive page with auto-playing video background, responsive SVG commercial logo and image sprite for partners logos on the page",
+        "techs": "HTML5, CSS3, jQuery, bigVideo.js"
+      }
+    },
+    {
+      "path": "folklor",
+      "side": "left",
+      "url": "http://www.zajazdfolklor.pl/",
+      "data": {
+        "title": "Zajazd Folklor",
+        "role": "Front-end Developer",
+        "description": "Website for hotel Zajazd Folklor. Information and photos about all the services provided by the hotel and apartment reservation",
+        "responsibilities": "Creating new sections for the web-site based on Angular(with new controllers, routing, etc.). Implementing of new graphical elements",
+        "techs": "AngularJS, jQuery, HTML5, CSS3"
+      }
+    },
+    {
+      "path": "zszywka",
+      "side": "right",
+      "url": "http://zszywka.pl/",
+      "data": {
+        "title": "Zszywka",
+        "role": "Full-stack Developer",
+        "description": "Zszywka is a graphic social network, where you can find an inspiring image on any topic, meet new people, promote own products. Zszywka allows to store all images one place, create shared publics and share an inspiration with other users.",
+        "responsibilities": "Development of administration panel tools for viewing statistics reports, complaints from users, etc. Creation of functionality \"promo post\", which allows users to keep their posted content in the top of related category. Creation of public (shared group) for shared content. Implementation of new UI components",
+        "techs": "PHP5, MySQL, Smarty, HTML5, CSS3, JavaScript, jQuery"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "path": "back_end",
+      "skillHeader": "Back-end",
+      "skillIcon": "icon icon-tools-2",
+      "skillSubHeader": "PHP, MySQL, Node.js",
+      "skillText": "MVC, PHP OOP, Laravel, Symfony, Codeigniter, Doctrine, PDO, Wordpress",
+      "duration": "0.3s",
+      "delay": "0.2s"
+    },
+    {
+      "path": "front_end",
+      "skillHeader": "Front-end",
+      "skillIcon": "icon icon-mobile",
+      "skillSubHeader": "JavaScript, SASS, LESS",
+      "skillText": "Standards ES5 and ES6, Typescript, Angular, jQuery, AJAX, Bootstrap, Flex",
+      "duration": "0.4s",
+      "delay": "0.3s"
+    },
+    {
+      "path": "aut_tools",
+      "skillHeader": "Automation tools",
+      "skillIcon": "icon icon-gears",
+      "skillSubHeader": "GULP, NPM, Composer",
+      "skillText": "Bower, WebPack, Babel, Files minification, BrowserSync",
+      "duration": "0.5s",
+      "delay": "0.4s"
+    },
+    {
+      "path": "usability",
+      "skillHeader": "Usability",
+      "skillIcon": "icon icon-tools",
+      "skillSubHeader": "Mobile first approach",
+      "skillText": "Responsive Web Design, Cross-browser compatibility, Media queries",
+      "duration": "0.6s",
+      "delay": "0.5s"
+    },
+    {
+      "path": "browser_tools",
+      "skillHeader": "Browser DevTools",
+      "skillIcon": "icon icon-browser",
+      "skillSubHeader": "Firefox, Chrome, IE10",
+      "skillText": "Element inspecting, Network, Debugging, Local Storage, Sources",
+      "duration": "0.7s",
+      "delay": "0.6s"
+    },
+    {
+      "path": "version_control",
+      "skillHeader": "Version  Control",
+      "skillIcon": "icon icon-linegraph",
+      "skillSubHeader": "GIT, SVN",
+      "skillText": "GitHub, GitHub Pages, Git Bash, Git features, Tortoise SVN, Gerrit",
+      "duration": "0.8s",
+      "delay": "0.7s"
+    }
+  ],
+  "timeline": [
+    {
+      "imgClass": "cd-location",
+      "imgSrc": "assets/img/timeline/cd-icon-picture.svg",
+      "imgAlt": "Picture",
+      "title": "Primaris",
+      "url": "http://primaris.eu/",
+      "position": "Front-end JavaScript Developer",
+      "responsibilities": "Designing, developing front-end of web applications. Creating front-end for mobile devices(and mobile first approach, of course). Creating and developing components for huge CMS of insurance company. Improving web applications based on PHP"
+    },
+    {
+      "imgClass": "cd-location",
+      "imgSrc": "assets/img/timeline/cd-icon-movie.svg",
+      "imgAlt": "Movie",
+      "title": "Profit Network",
+      "url": "http://www.profitnetwork.pl/",
+      "position": "PHP Web Developer",
+      "responsibilities": "Development of administration panel for web application Tapon.pl based on commercial PHP Framework. Designing and development of database, server and client side for commercial squash league. Development of single page web applications based on commercial PHP Framework on server side and Bootstrap 3 on client side. Development of front-end for Tapon.pl facebook application."
+    },
+    {
+      "imgClass": "cd-location",
+      "imgSrc": "assets/img/timeline/cd-icon-location.svg",
+      "imgAlt": "Location",
+      "title": "Szafa.pl",
+      "url": "http://grupaszafa.pl/",
+      "position": "PHP Web Developer",
+      "responsibilities": "Development of administration panel tools for viewing statistics reports, complaints from users. Creation of functionality \"promo pin\", which allows users to keep their content in the top of content category.Creation of public(shared group). This is a group, that has few owners and many members. There users can send invitation to each other and share their content. Implementation of new graphical components in Zszywka.pl design (buttons, labels, fonts, logos, etc.)."
+    },
+    {
+      "imgClass": "cd-location",
+      "imgSrc": "assets/img/timeline/cd-icon-picture.svg",
+      "imgAlt": "Picture",
+      "title": "Ideo",
+      "url": "http://www.ideo.pl/",
+      "position": "Intern / PHP Web Developer",
+      "responsibilities": "My first job in field of Web Development. Making a front-end templates for internal commercial CMS system. Converting PSD templates to the HTML and CSS."
+    },
+    {
+      "imgClass": "cd-location",
+      "imgSrc": "assets/img/timeline/cd-icon-movie.svg",
+      "imgAlt": "Movie",
+      "title": "University of Information Technology and Management",
+      "url": "http://kandydaci.wsiz.rzeszow.pl/en/lang.html",
+      "position": "Journalism and Social Communication. Master's degree."
+    },
+    {
+      "imgClass": "cd-location",
+      "imgSrc": "assets/img/timeline/cd-icon-location.svg",
+      "imgAlt": "Location",
+      "title": "Kharkiv National University of Radioelectronics",
+      "url": "http://nure.ua/en/",
+      "position": "Automation and Computer Integrated Technologies. Bachelor's degree"
+    }
+  ]
+}

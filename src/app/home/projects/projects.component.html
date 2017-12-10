@@ -1,0 +1,10 @@
+<section id="section4" class="projects-section">
+    <div class="section-header l-header">
+        <h2>Projects</h2>
+    </div>
+
+    <div *ngFor="let project of projects">
+        <app-project-left [project]="project"  *ngIf="project.side === 'left'"></app-project-left>
+        <app-project-right [project]="project"  *ngIf="project.side === 'right'"></app-project-right>
+    </div>
+</section>

@@ -1,0 +1,12 @@
+<div class="img-fix project-{{ project['path'] }}">
+  <div class="project-overlay"></div>
+  <div class="portfolio-caption flex-box">
+    <div class="portfolio-caption-inner">
+      <h3 class="portfolio-title">{{project['data'].title}}</h3>
+      <a routerLink="project.url" title="{{ project['data'].title }}" target="_blank">
+        <i class="icon icon-attachment"></i>
+      </a>
+      <h4 class="portfolio-cat">{{linkText}}</h4>
+    </div>
+  </div>
+</div>

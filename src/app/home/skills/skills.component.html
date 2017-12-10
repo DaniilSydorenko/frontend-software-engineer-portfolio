@@ -1,0 +1,14 @@
+<section id="section3" class="skills-page">
+    <div class="container tiles-container flex-box">
+        <div class="section-header d-header">
+            <h2>Skills</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 skills-wrap service wow fadeInUp animated tile"
+                 *ngFor="let skill of skills">
+                 <!-- data-wow-duration="{{ skill.duration }}" data-wow-delay="{{ skill.delay }}">-->
+                <app-skill class="col-md-4 col-sm-6" [skill]="skill"></app-skill>
+            </div>
+        </div>
+    </div>
+</section>

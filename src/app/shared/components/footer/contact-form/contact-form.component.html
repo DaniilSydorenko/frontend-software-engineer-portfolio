@@ -1,0 +1,31 @@
+<form #form="ngForm" (ngSubmit)="onSubmit()" *ngIf="active" novalidate>
+
+    <div class="contact-data col-md-12">
+        <a href="tel:48537579280">
+            <i class="fa fa-phone"></i>+48-537-579-280
+        </a>
+    </div>
+
+    <div class="form-group input-wrapper" [ngClass]="{'has-error': name.invalid && name.touched}">
+        <input id="name" type="text" name="name" class="form-control input-field" required
+               [(ngModel)]="newMessage.name" #name="ngModel" (focus)="onFocus($event)">
+        <label for="name">Name<span>*</span></label>
+        <span class="help-block" *ngIf="name.invalid && name.touched">Name is required</span>
+    </div>
+
+    <div class="form-group input-wrapper" [ngClass]="{'has-error': email.invalid && email.touched}">
+        <input id="email" type="email" name="email" class="form-control input-field" required
+               [(ngModel)]="newMessage.email" #email="ngModel" (focus)="onFocus($event)">
+        <label for="email">Email<span>*</span></label>
+        <span class="help-block" *ngIf="email.invalid && email.touched">Email is required</span>
+    </div>
+
+    <div class="form-group input-wrapper" [ngClass]="{'has-error': message.invalid && message.touched}">
+        <textarea id="message" name="message" class="form-control input-field" required
+               [(ngModel)]="newMessage.message" #message="ngModel" (focus)="onFocus($event)"></textarea>
+        <label for="message">Message<span>*</span></label>
+        <span class="help-block" *ngIf="message.invalid && message.touched">Message is required</span>
+    </div>
+
+    <button type="submit" class="btn btn-lg btn-block btn-primary" [disabled]="form.invalid">Send</button>
+</form>

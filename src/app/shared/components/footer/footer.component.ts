@@ -6,7 +6,7 @@ import { Component } from '@angular/core'
 })
 
 export class FooterComponent {
-  copyYear() {
+  copyYear(): number {
     const date = new Date();
     return date.getFullYear();
   }

@@ -1,4 +1,5 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Message } from '../../../models/message';
 
 @Component({
@@ -7,19 +8,29 @@ import { Message } from '../../../models/message';
 })
 
 export class ContactFormComponent {
-    @Output() messageCreated = new EventEmitter();
+    rForm: FormGroup;
+    message: any;
+    name: string;
+    email: string;
+    messageText: string;
+    alertText = 'This field is required';
 
-    newMessage: Message = new Message();
-    active = true;
+    constructor (private fb: FormBuilder) {
+      this.rForm = fb.group({
+        'name': [null, Validators.compose([Validators.required, Validators.minLength(2), Validators.maxLength(30)])],
+        'email': [null, Validators.compose([Validators.required, Validators.minLength(5), Validators.maxLength(30), Validators.email])],
+        'messageText': [null, Validators.compose([Validators.required, Validators.minLength(2), Validators.maxLength(500)])],
+      });
+    }
 
-    onFocus(event) {
+    onFocus (event) {
       event.target.classList.add('active');
     }
 
-    onSubmit() {
-        this.messageCreated.emit({ message: this.newMessage });
-        this.newMessage = new Message();
-        this.active = false;
-        setTimeout(() => this.active = true, 0);
+    onSubmit (message: Message) {
+      this.name = message.name;
+      this.email = message.email;
+      this.messageText = message.messageText;
+      console.log(message);
     }
 }

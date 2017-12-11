@@ -64,6 +64,16 @@
       cursor: text;
       transition: .2s ease-out;
     }
+
+    .alert-text {
+      background: #f2edda;
+      padding: 7px;
+      font-size: .9em;
+      margin-bottom: 20px;
+      display: inline-block;
+      color: #a94442;
+      animation: 1s alertAnimation forwards;
+    }
   }
 
   .btn.disabled {
@@ -76,5 +86,16 @@
 @media only screen and (max-width: 64em) {
   .contact-form {
     margin-bottom: 3em;
+  }
+}
+
+@keyframes alertAnimation {
+  from {
+    opacity:0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity:1;
+    transform: translateY(0);
   }
 }

@@ -41,10 +41,17 @@
 
     .skills-content {
       border: 1px solid #f9f9f9;
-      box-shadow: rgba(0, 0, 0, 0.13) 0 5px 10px;
+      box-shadow: rgba(0, 0, 0, 0.13) 7px 7px 10px;
       padding: 5px;
+      transition: all .1s ease-in-out;
+
       > i {
         font-size: 50px;
+      }
+
+      &:hover {
+        background: #EEF1F1;
+        box-shadow: rgba(0, 0, 0, 0.13) 10px 10px 15px;
       }
     }
   }

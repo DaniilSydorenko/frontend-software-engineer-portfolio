@@ -12,6 +12,6 @@ export class AppProjectViewComponent {
   linkText: string;
 
   constructor() {
-    this.linkText = 'Click on the link to visit website';
+    this.linkText = 'Visit a website';
   }
 }

@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { AgmCoreModule } from '@agm/core';
 
 /** Routing **/
 import { AppRouting } from './app.routing';
@@ -15,6 +16,7 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { MenuComponent } from './shared/components/header/menu/menu.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { ContactFormComponent } from './shared/components/footer/contact-form/contact-form.component';
+import { GoogleMapComponent } from './shared/components/footer/google-map/google-map.component';
 
 /** Home Components **/
 import { HomeComponent } from './home/home.component';
@@ -41,7 +43,10 @@ import { UserFormComponent } from './users/user-form/user-form.component';
     ReactiveFormsModule,
     HttpModule,
     AppRouting,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyA4v_8kzUhXhYR6d7AvqedRKDfUYZkAovM'
+    })
   ],
   declarations: [
     AppComponent,
@@ -49,6 +54,7 @@ import { UserFormComponent } from './users/user-form/user-form.component';
     MenuComponent,
     FooterComponent,
     ContactFormComponent,
+    GoogleMapComponent,
     HomeComponent,
     AppHeroComponent,
     AppTimelineComponent,

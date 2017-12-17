@@ -12,7 +12,44 @@
       }
     }
 
+    &.lside {
+      &.light-content {
+        background-color: #fcfcfc !important;
+      }
+
+      .data-side {
+        .text-center {
+          * {
+            color: #333;
+          }
+        }
+      }
+
+      &.active {
+        .data-side {
+          position: fixed;
+          top: 0;
+        }
+
+        .bg-side {
+          margin-left: 50%;
+        }
+      }
+    }
+
     &.rside {
+      &.dark-content {
+        background-color: transparent !important;
+      }
+
+      .data-side {
+        .text-center {
+          * {
+            color: #f9f9f9;
+          }
+        }
+      }
+
       &.active {
         .data-side {
           position: fixed;
@@ -22,49 +59,8 @@
       }
     }
 
-    &.lside {
-      &.active {
-        .data-side {
-          position: fixed;
-          top: 0;
-        }
-        .bg-side {
-          margin-left: 50%;
-        }
-      }
-    }
-
-    // Section of project with light background
-    &.light-content {
-      background-color: #fcfcfc !important;
-
-      .data-side {
-
-        .text-center {
-          * {
-            color: #333;
-          }
-        }
-      }
-    }
-
-    // Section of project with dark background
-    &.dark-content {
-      background-color: transparent !important;
-
-      .data-side {
-
-        .text-center {
-          * {
-            color: #f9f9f9;
-          }
-        }
-      }
-    }
-
     // Part of section with project image
     .bg-side {
-
       margin: 0;
       overflow: hidden;
       padding: 0;
@@ -75,18 +71,60 @@
         position: relative;
         display: block;
         opacity: 1;
-        /* transform: scale3d(1.02,1.02,1); */
         transition: opacity .5s, transform .5s;
         backface-visibility: hidden;
         background-size: 100%;
-        /* background-position-x: 50%!important; */
-        /* background-position-y: top!important; */
 
-        .portfolio-caption {
+        &.project-zszywka {
+          @include img-url($img-url, "zszywka_1.jpg");
+        }
+
+        &.project-i_sport {
+          @include img-url($img-url, "i_sport_2.jpg");
+          background-size: cover !important;
+          background-position-x: 50%;
+        }
+
+        &.project-tapon_fb_app {
+          @include img-url($img-url, "tapon_fb_app_1.jpg");
+          background-size: cover !important;
+          background-position-x: 50%;
+        }
+
+        &.project-wikendo {
+          @include img-url($img-url, "wikendo_1.jpg");
+          background-size: cover !important;
+          background-position-x: 50%;
+        }
+
+        &.project-folklor {
+          @include img-url($img-url, "folklor_1.jpg");
+        }
+
+        &.project-flex_mix {
+          @include img-url($img-url, "flex_mix_1.jpg");
+        }
+
+        &.project-one_web {
+          @include img-url($img-url, "one_web_1.jpg");
+        }
+
+        .project-overlay {
+          top: -2px;
+          left: -2px;
+          right: -2px;
+          bottom: -2px;
+          position: absolute;
+          background-color: rgba(38, 93, 125, .6);
+        }
+
+        .project-caption {
           @include flex-box(center, center, center, column, wrap);
-
-
-
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
           padding: 6em;
           color: #fff;
           text-transform: uppercase;
@@ -94,26 +132,8 @@
           -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-
-
-          //opacity: 0;
-          //position: absolute;
-          //background-color: rgba(28, 105, 150, .8);
-          //transition: opacity 0.35s linear 0s;
-          //backface-visibility: hidden;
-          //text-align: center;
-          //top: 50%;
-          //width: 100%;
-          //transform: translateY(-50%);
-          //
           &:before {
             content: '';
-            /* width: 78%; */
             position: absolute;
             top: 12%;
             right: 14%;
@@ -122,95 +142,85 @@
             border: 2px solid #fff;
             box-shadow: 0 0 0 90px rgba(255, 255, 255, 0.4);
             opacity: 0;
-            transition: opacity 0.35s, -webkit-transform 0.35s;
-            transition: opacity 0.35s, transform 0.35s;
             transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
             -webkit-transform: scale3d(1.4, 1.4, 1);
             transform: scale3d(1.4, 1.4, 1);
-
           }
 
-          .portfolio-caption-inner {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-          }
-        }
+          &__inner {
+            @include flex-box(center, center, center, column, wrap);
 
-        .portfolio-figure:hover .portfolio-caption,
-        .portfolio-figure:hover .portfolio-title,
-        .portfolio-figure:hover .portfolio-cat {
-          opacity: 1;
-        }
+            &-title {
+              font-size: 2rem;
+              font-weight: 700;
+              transition: all, 0.5s;
+              -webkit-transform: translate3d(0, -200%, 0);
+              transform: translate3d(0, -200%, 0);
+              text-align: center;
+            }
 
-        h3 {
-          color: #fff !important;
-          //background: #f7f7f7;
+            &-link {
+              padding: 10px 20px;
+              transition: all, 0.5s;
+              -webkit-transform: translate3d(0, 200%, 0);
+              transform: translate3d(0, 200%, 0);
 
-          font-size: 2rem;
-          font-weight: 700;
-          transition: all, 0.5s;
-          //margin: 40px;
-          -webkit-transform: translate3d(0, -200%, 0);
-          transform: translate3d(0, -200%, 0);
-          text-align: center;
-        }
-
-        a {
-          padding: 10px;
-
-          span {
-            padding: 10px;
-
-            color: #fff !important;
-            //background: #f7f7f7;
-
-            font-size: 1.1rem;
-            transition: all, 0.5s;
-            transform: translate3d(0, 200%, 0);
-            margin: 40px;
-
-            opacity: 0;
+              &-text {
+                color: #ffffff !important;
+                font-size: 1.1rem;
+                opacity: 0;
+              }
+            }
           }
         }
 
         &:hover {
-          .project-overlay {
-            background-color: rgba(38, 93, 125, .7);
-          }
-
           transform: scale3d(1.1, 1.1, 1);
 
-          h3 {
-            opacity: 1;
-            transform: translate3d(0, 0, 0);
+          .project-overlay {
+            background-color: rgba(38, 93, 125, .9) !important;
           }
 
-          a {
+          .project-caption {
+            opacity: 1;
 
-            span {
-
-
-              background-color: rgba(250, 250, 250, .9);
-              color: #333 !important;
-
+            &:before {
               opacity: 1;
-              transform: translate3d(0, 0, 0);
+              -webkit-transform: scale3d(1,1,1);
+              transform: scale3d(1,1,1);
+            }
+
+            &__inner {
+              &-title {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+              }
+
+              &-link {
+                transition: all, 0.5s;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+                border: thin solid #fff;
+                position: relative;
+                z-index: 1000000;
+                display: block;
+                overflow: hidden;
+                opacity: 1;
+                font-size: 1rem;
+                box-shadow: 4px 4px 0 1px #fefefe;
+
+                &:active,
+                &:hover {
+                  transition: all, 0.5s;
+                  box-shadow: 0 0 0 1px #ffffff;
+                }
+
+                &-text {
+                  opacity: 1;
+                }
+              }
             }
           }
-
-          .portfolio-caption {
-            opacity: 1;
-
-              &:before {
-                opacity: 1;
-                -webkit-transform: scale3d(1,1,1);
-                transform: scale3d(1,1,1);
-
-              }
-          }
-
         }
 
         &.active {
@@ -221,23 +231,9 @@
             transform: translate3d(0, 0, 0);
           }
 
-          h4 {
-            opacity: 1;
-            transform: translate3d(0, 0, 0);
-          }
-
-          .portfolio-caption {
+          .project-caption {
             opacity: 1;
           }
-        }
-
-        .project-overlay {
-          top: -2px;
-          left: -2px;
-          right: -2px;
-          bottom: -2px;
-          position: absolute;
-          background-color: rgba(38, 93, 125, .5);
         }
       }
     }
@@ -249,15 +245,15 @@
 
       .project-description {
         height: 100vh;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
         background: transparent !important;
         visibility: visible;
         animation-name: fadeInUp;
         margin: 0 auto;
         border-radius: 0;
         text-align: left;
-        justify-content: flex-start;
-        align-content: flex-start;
-        align-items: flex-start;
         padding: 0 50px;
 
         .text-center {
@@ -275,40 +271,6 @@
           }
         }
       }
-    }
-
-    .project-zszywka {
-      @include img-url($img-url, "zszywka_1.jpg");
-    }
-
-    .project-i_sport {
-      @include img-url($img-url, "i_sport_2.jpg");
-      background-size: cover !important;
-      background-position-x: 50%;
-    }
-
-    .project-tapon_fb_app {
-      @include img-url($img-url, "tapon_fb_app_1.jpg");
-      background-size: cover !important;
-      background-position-x: 50%;
-    }
-
-    .project-wikendo {
-      @include img-url($img-url, "wikendo_1.jpg");
-      background-size: cover !important;
-      background-position-x: 50%;
-    }
-
-    .project-folklor {
-      @include img-url($img-url, "folklor_1.jpg");
-    }
-
-    .project-flex_mix {
-      @include img-url($img-url, "flex_mix_1.jpg");
-    }
-
-    .project-one_web {
-      @include img-url($img-url, "one_web_1.jpg");
     }
 
     // Mobile

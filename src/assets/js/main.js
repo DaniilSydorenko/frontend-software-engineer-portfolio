@@ -129,18 +129,5 @@ const App = {
       bgColor: 'transparent', // Allow custom background-color for Vide div,
       className: '' // Add custom CSS class to Vide div
     });
-
-    if (window.innerWidth < 768) {
-      App.bgSide.on('click', function () {
-        var curImgFix = $(this).find('.img-fix');
-        if (curImgFix.hasClass("active")) {
-          curImgFix.removeClass('active');
-          console.log("Removed");
-        } else {
-          $('.img-fix').removeClass('active');
-          curImgFix.addClass('active');
-        }
-      });
-    }
   }
 };

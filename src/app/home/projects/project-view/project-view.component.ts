@@ -10,8 +10,10 @@ export class AppProjectViewComponent {
   @Input() project: Project;
 
   linkText: string;
+  activeClass: boolean;
 
   constructor() {
     this.linkText = 'Visit a website';
+    this.activeClass = false;
   }
 }

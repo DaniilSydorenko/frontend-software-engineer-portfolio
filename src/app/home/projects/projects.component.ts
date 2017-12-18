@@ -1,15 +1,35 @@
-import {Component, Input, HostListener} from '@angular/core';
+import { Component, Input, HostListener, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-projects',
     templateUrl: 'projects.component.html',
 })
 
-export class AppProjectsComponent {
+export class AppProjectsComponent implements OnInit {
   @Input() projects: any;
 
   projectSections: any = document.getElementsByClassName('section-content');
   scrollFromTop: number = window.scrollY;
+
+
+  constructor() {}
+
+  ngOnInit() {
+    // const projectBgSide: Element = document.querySelector('.bg-side');
+
+    // if (window.innerWidth < 768) {
+    //   projectBgSide.addEventListener('click', function () {
+    //     console.log('BG');
+    //     const curImgFix = this.projectBgSide.getElementsByClassName('img-fix');
+    //     if (curImgFix[0].classList.contains('active')) {
+    //       curImgFix[0].classList.remove('active');
+    //     } else {
+    //       curImgFix[0].classList.remove('active');
+    //       curImgFix[0].classList.add('active');
+    //     }
+    //   });
+    // }
+  }
 
   getCurrentScroll (): number {
     return window.pageYOffset || document.documentElement.scrollTop;

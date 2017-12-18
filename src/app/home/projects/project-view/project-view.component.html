@@ -1,4 +1,4 @@
-<div class="img-fix project-{{ project['path'] }}">
+<div class="img-fix project-{{ project['path'] }}" [ngClass]="{active: activeClass}" (click)="activeClass = !activeClass">
   <div class="project-overlay"></div>
   <div class="project-caption flex-box">
     <div class="project-caption__inner">

@@ -174,7 +174,7 @@
           }
         }
 
-        &:hover {
+        @mixin project-animation() {
           transform: scale3d(1.1, 1.1, 1);
 
           .project-overlay {
@@ -223,16 +223,15 @@
           }
         }
 
-        &.active {
-          transform: scale3d(1.1, 1.1, 1);
-
-          h3 {
-            opacity: 1;
-            transform: translate3d(0, 0, 0);
+        &:hover {
+          @media screen and (min-width: 768px) {
+            @include project-animation();
           }
+        }
 
-          .project-caption {
-            opacity: 1;
+        &.active {
+          @media screen and (max-width: 767px) {
+            @include project-animation();
           }
         }
       }

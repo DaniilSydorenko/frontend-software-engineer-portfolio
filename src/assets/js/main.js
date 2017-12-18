@@ -62,43 +62,43 @@ const App = {
   /**
    * Video background
    */
-  // scaleVideoContainer: function () {
-  //   const height = App.ih + 5;
-  //   const unitHeight = parseInt(height) + 'px';
-  //   $('.homepage-hero-module').css('height', unitHeight);
-  // },
-  //
-  // initBannerVideoSize: function (element) {
-  //   $(element).each(function () {
-  //     $(this).data('height', $(this).height());
-  //     $(this).data('width', $(this).width());
-  //   });
-  //   this.scaleBannerVideoSize(element);
-  // },
-  //
-  // scaleBannerVideoSize: function (element) {
-  //   var windowWidth = App.iw,
-  //     windowHeight = App.ih + 5,
-  //     videoWidth,
-  //     videoHeight;
-  //
-  //   $(element).each(function () {
-  //     var videoAspectRatio = $(this).data('height') / $(this).data('width');
-  //
-  //     $(this).width(windowWidth);
-  //
-  //     if (windowWidth < 1000) {
-  //       videoHeight = windowHeight;
-  //       videoWidth = videoHeight / videoAspectRatio;
-  //       $(this).css({'margin-top': 0, 'margin-left': -(videoWidth - windowWidth) / 2 + 'px'});
-  //
-  //       $(this).width(videoWidth).height(videoHeight);
-  //     }
-  //
-  //     $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
-  //
-  //   });
-  // },
+  scaleVideoContainer: function () {
+    const height = App.ih + 5;
+    const unitHeight = parseInt(height) + 'px';
+    $('.homepage-hero-module').css('height', unitHeight);
+  },
+
+  initBannerVideoSize: function (element) {
+    $(element).each(function () {
+      $(this).data('height', $(this).height());
+      $(this).data('width', $(this).width());
+    });
+    this.scaleBannerVideoSize(element);
+  },
+
+  scaleBannerVideoSize: function (element) {
+    var windowWidth = App.iw,
+      windowHeight = App.ih + 5,
+      videoWidth,
+      videoHeight;
+
+    $(element).each(function () {
+      var videoAspectRatio = $(this).data('height') / $(this).data('width');
+
+      $(this).width(windowWidth);
+
+      if (windowWidth < 1000) {
+        videoHeight = windowHeight;
+        videoWidth = videoHeight / videoAspectRatio;
+        $(this).css({'margin-top': 0, 'margin-left': -(videoWidth - windowWidth) / 2 + 'px'});
+
+        $(this).width(videoWidth).height(videoHeight);
+      }
+
+      $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+
+    });
+  },
 
 
   /**
@@ -109,6 +109,8 @@ const App = {
      * Wow init
      */
     new WOW().init();
+
+    this.initBannerVideoSize();
 
     /**
      * Video background

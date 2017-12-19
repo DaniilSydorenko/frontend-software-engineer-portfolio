@@ -1,7 +1,5 @@
 export class TimelineBlock {
-    imgClass: string;
-    imgSrc: string;
-    imgAlt: string;
+    iconClass: string;
     title: string;
     url: string;
     position: string;

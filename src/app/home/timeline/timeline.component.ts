@@ -1,4 +1,4 @@
-import {Component, Input, HostListener} from '@angular/core';
+import { Component, Input, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-timeline',
@@ -8,7 +8,8 @@ import {Component, Input, HostListener} from '@angular/core';
 export class AppTimelineComponent {
   @Input() timeline: any;
 
-  @HostListener('window:scroll', ['$event']) onScrollEvent($event) {
+  @HostListener('window:scroll', ['$event'])
+  onScrollEvent($event) {
     const block = document.getElementsByClassName('cd-timeline-block');
 
     function hideBlocks(blocks, offset) {
@@ -18,7 +19,7 @@ export class AppTimelineComponent {
       }
     }
 
-    // To helper ?
+    // TODO To helper ?
     function getElementOffset(element) {
       const de = document.documentElement;
       const box = element.getBoundingClientRect();

@@ -81,29 +81,19 @@ Main components
 }
 
 .cd-timeline-img {
+  @include flex-box();
+
   position: absolute;
   top: 0;
   left: 0;
   width: 40px;
   height: 40px;
   box-shadow: 0 0 0 2px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  background: #383F42;
+  color: #fcfcfc;
 
-  img {
-    display: block;
-    width: 24px;
-    height: 24px;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    margin-left: -12px;
-    margin-top: -12px;
-  }
-
-  &.cd-picture,
-  &.cd-movie,
-  &.cd-location {
-    background: #383F42;
-    color: #fcfcfc;
+  .fa {
+    font-size: 30px;
   }
 }
 

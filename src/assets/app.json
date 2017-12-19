@@ -143,8 +143,7 @@
   ],
   "timeline": [
     {
-      "imgClass": "cd-location",
-      "imgSrc": "assets/img/timeline/cd-icon-picture.svg",
+      "iconClass": "vcard",
       "imgAlt": "Picture",
       "title": "Primaris",
       "url": "http://primaris.eu/",
@@ -152,8 +151,7 @@
       "responsibilities": "Designing, developing front-end of web applications. Creating front-end for mobile devices(and mobile first approach, of course). Creating and developing components for huge CMS of insurance company. Improving web applications based on PHP"
     },
     {
-      "imgClass": "cd-location",
-      "imgSrc": "assets/img/timeline/cd-icon-movie.svg",
+      "iconClass": "vcard",
       "imgAlt": "Movie",
       "title": "Profit Network",
       "url": "http://www.profitnetwork.pl/",
@@ -161,8 +159,7 @@
       "responsibilities": "Development of administration panel for web application Tapon.pl based on commercial PHP Framework. Designing and development of database, server and client side for commercial squash league. Development of single page web applications based on commercial PHP Framework on server side and Bootstrap 3 on client side. Development of front-end for Tapon.pl facebook application."
     },
     {
-      "imgClass": "cd-location",
-      "imgSrc": "assets/img/timeline/cd-icon-location.svg",
+      "iconClass": "vcard",
       "imgAlt": "Location",
       "title": "Szafa.pl",
       "url": "http://grupaszafa.pl/",
@@ -170,8 +167,7 @@
       "responsibilities": "Development of administration panel tools for viewing statistics reports, complaints from users. Creation of functionality \"promo pin\", which allows users to keep their content in the top of content category.Creation of public(shared group). This is a group, that has few owners and many members. There users can send invitation to each other and share their content. Implementation of new graphical components in Zszywka.pl design (buttons, labels, fonts, logos, etc.)."
     },
     {
-      "imgClass": "cd-location",
-      "imgSrc": "assets/img/timeline/cd-icon-picture.svg",
+      "iconClass": "vcard",
       "imgAlt": "Picture",
       "title": "Ideo",
       "url": "http://www.ideo.pl/",
@@ -179,16 +175,14 @@
       "responsibilities": "My first job in field of Web Development. Making a front-end templates for internal commercial CMS system. Converting PSD templates to the HTML and CSS."
     },
     {
-      "imgClass": "cd-location",
-      "imgSrc": "assets/img/timeline/cd-icon-movie.svg",
+      "iconClass": "graduation-cap",
       "imgAlt": "Movie",
       "title": "University of Information Technology and Management",
       "url": "http://kandydaci.wsiz.rzeszow.pl/en/lang.html",
       "position": "Journalism and Social Communication. Master's degree."
     },
     {
-      "imgClass": "cd-location",
-      "imgSrc": "assets/img/timeline/cd-icon-location.svg",
+      "iconClass": "graduation-cap",
       "imgAlt": "Location",
       "title": "Kharkiv National University of Radioelectronics",
       "url": "http://nure.ua/en/",

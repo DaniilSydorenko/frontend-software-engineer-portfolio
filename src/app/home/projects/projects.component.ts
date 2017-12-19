@@ -9,8 +9,6 @@ export class AppProjectsComponent implements OnInit {
   @Input() projects: any;
 
   projectSections: any = document.getElementsByClassName('section-content');
-  scrollFromTop: number = window.scrollY;
-
 
   constructor() {}
 

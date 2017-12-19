@@ -142,7 +142,7 @@
             border: 2px solid #fff;
             box-shadow: 0 0 0 90px rgba(255, 255, 255, 0.4);
             opacity: 0;
-            transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
             -webkit-transform: scale3d(1.4, 1.4, 1);
             transform: scale3d(1.4, 1.4, 1);
           }
@@ -207,7 +207,6 @@
                 overflow: hidden;
                 opacity: 1;
                 font-size: 1rem;
-                box-shadow: 4px 4px 0 1px #fefefe;
 
                 &:active,
                 &:hover {

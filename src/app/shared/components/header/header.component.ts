@@ -1,4 +1,4 @@
-import {Component, Output, EventEmitter, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 
 @Component({
     selector: 'app-header',
@@ -7,11 +7,30 @@ import {Component, Output, EventEmitter, OnInit} from '@angular/core';
 
 export class HeaderComponent implements OnInit {
   state = false;
-  buttonLines = [1, 2, 3, 4, 5, 6];
+  buttonLines: Array<number> = [1, 2, 3, 4, 5, 6];
+  lastScrollVal: number;
 
   constructor() {}
 
   ngOnInit() {}
+
+  getCurrentScroll (): number {
+    return window.pageYOffset || document.documentElement.scrollTop;
+  }
+
+  @HostListener('window:scroll', ['$event'])
+
+  onScrollEvent($event) {
+    const header = document.getElementsByClassName('header')[0];
+
+    if (this.lastScrollVal < this.getCurrentScroll()) {
+      header.classList.add('shrink');
+    } else {
+      header.classList.remove('shrink');
+    }
+
+    this.lastScrollVal = this.getCurrentScroll();
+  }
 
   toggleResponsiveMobileMenu(home: HTMLElement, menuItem: NodeListOf<Element>, menuContainer: HTMLElement) {
     if (home.classList.contains('display')) {
@@ -77,7 +96,5 @@ export class HeaderComponent implements OnInit {
     const home = <HTMLElement>document.querySelector('#home');
 
     this.toggleResponsiveMobileMenu(home, menuItem, menuContainer);
-    console.log(this.state);
   }
 }
-

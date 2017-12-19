@@ -1,4 +1,5 @@
 import {Component, HostListener, OnInit} from '@angular/core';
+import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scroll-to';
 
 @Component({
     selector: 'app-header',
@@ -10,11 +11,18 @@ export class HeaderComponent implements OnInit {
   buttonLines: Array<number> = [1, 2, 3, 4, 5, 6];
   lastScrollVal: number;
 
-  constructor() {}
+  constructor(private _scrollToService: ScrollToService) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
-  getCurrentScroll (): number {
+  public triggerScrollTo(scrollTo) { // TODO to helper ?
+    const config: ScrollToConfigOptions = {
+      target: scrollTo
+    };
+    this._scrollToService.scrollTo(config);
+  }
+
+  getCurrentScroll (): number { // TODO to helper ?
     return window.pageYOffset || document.documentElement.scrollTop;
   }
 

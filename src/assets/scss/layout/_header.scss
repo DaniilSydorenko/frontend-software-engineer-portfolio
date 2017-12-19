@@ -29,9 +29,12 @@
     justify-content: space-between !important;
     flex-direction: row !important;
     align-items: center;
+
     .logo-name {
       overflow: hidden;
-      p {
+
+      &__text {
+        display: inline-flex;
         padding: 15px 20px;
         text-transform: uppercase;
         color: #f9f9f9 !important;
@@ -45,7 +48,7 @@
         overflow: hidden;
         cursor: pointer;
 
-        span {
+        &__rest-text {
           transition: all .3s;
           position: absolute;
           left: -200px;
@@ -54,6 +57,7 @@
         &:hover {
           transition: padding-right ease-in-out .3s;
           padding-right: 212px;
+
           > span {
             transition: left ease-in-out .3s;
             left: 38px;
@@ -122,5 +126,4 @@
       }
     }
   }
-
 }

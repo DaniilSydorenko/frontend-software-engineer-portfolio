@@ -4,4 +4,5 @@ export class TimelineBlock {
     url: string;
     position: string;
     responsibilities: string;
+    date: string;
 }

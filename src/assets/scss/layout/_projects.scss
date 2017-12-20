@@ -91,12 +91,6 @@
           background-position-x: 50%;
         }
 
-        &.project-wikendo {
-          @include img-url($img-url, "wikendo_1.jpg");
-          background-size: cover !important;
-          background-position-x: 50%;
-        }
-
         &.project-folklor {
           @include img-url($img-url, "folklor_1.jpg");
         }
@@ -107,6 +101,12 @@
 
         &.project-one_web {
           @include img-url($img-url, "one_web_1.jpg");
+          background-size: cover !important;
+        }
+
+        &.project-prq {
+          @include img-url($img-url, "prq_2.png", center);
+          background-size: cover !important;
         }
 
         .project-overlay {

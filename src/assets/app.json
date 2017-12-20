@@ -1,20 +1,32 @@
 {
   "projects": [
     {
-      "path": "one_web",
+      "path": "prq",
       "side": "right",
+      "url": "https://ecovadis-survey.com/register/account-details/",
+      "data": {
+        "title": "Ecovadis Portal",
+        "role": "Front-end Developer",
+        "description": "Registration application for Ecovadis Portal. Allow customers to create own account for their business.",
+        "responsibilities": "Front-end development",
+        "techs": "JavaScript, React, Redux, Redux observable, Flow.js, Webpack, JSX, Styled Components, SASS"
+      }
+    },
+    {
+      "path": "one_web",
+      "side": "left",
       "url": "https://www.allianz.pl/dla-ciebie/",
       "data": {
-        "title": "Components for commercial CMS",
+        "title": "Commercial CMS",
         "role": "Front-end Developer",
-        "description": "This is Internal commercial CMS for web-pages building. All internal product and web-sites of big European insurance company should have the same style and structure. Therefore all web-sites were built on components of this CMS.",
+        "description": "UI components for internal commercial CMS. All internal product and web-sites of big European insurance company should have the same style and structure. Therefore all web-sites were built on components of this CMS.",
         "responsibilities": "Front-end development for huge commercial CMS",
         "techs": "JavaScript, AngularJS, jQuery, JSON, Freemarker template, LESS, Flex"
       }
     },
     {
       "path": "flex_mix",
-      "side": "left",
+      "side": "right",
       "url": "http://daniilsydorenko.github.io/flex-mix/",
       "data": {
         "title": "Flex-mix",
@@ -26,7 +38,7 @@
     },
     {
       "path": "i_sport",
-      "side": "right",
+      "side": "left",
       "url": "https://i-sport.pl/",
       "data": {
         "title": "I-sport",
@@ -38,26 +50,14 @@
     },
     {
       "path": "tapon_fb_app",
-      "side": "left",
+      "side": "right",
       "url": "https://www.facebook.com/TapMoreGetMore/app/371913996253131/",
       "data": {
-        "title": "Tapon - Facebook Application",
+        "title": "Facebook App",
         "role": "Front-end Developer",
-        "description": "Tapon.pl Facebook application",
+        "description": "Facebook application for web-site Tapon.pl",
         "responsibilities": "Front-end development",
         "techs": "HTML5, CSS3, JavaScript, jQuery, Facebook Development Tools"
-      }
-    },
-    {
-      "path": "wikendo",
-      "side": "right",
-      "url": "http://wikendo.pl/",
-      "data": {
-        "title": "Wikendo",
-        "role": "Front-end Developer",
-        "description": "Web site for company Wikendo",
-        "responsibilities": "Creating full responsive page with auto-playing video background, responsive SVG commercial logo and image sprite for partners logos on the page",
-        "techs": "HTML5, CSS3, jQuery, bigVideo.js"
       }
     },
     {
@@ -144,49 +144,57 @@
   "timeline": [
     {
       "iconClass": "vcard",
-      "imgAlt": "Picture",
+      "title": "EcoVadis",
+      "url": "http://www.ecovadis.com/",
+      "position": "Front-end JavaScript Developer",
+      "responsibilities": "Developing single page application based on React & Redux. Building the UI components (desktop and mobile) with React(JSX), SASS. Creating tests for React components with Enzyme. Being a part of the team located in Warsaw, Paris, Tunis using Scrum.",
+      "date": "09.2017 - 11.2017"
+    },
+    {
+      "iconClass": "vcard",
       "title": "Primaris",
       "url": "http://primaris.eu/",
       "position": "Front-end JavaScript Developer",
-      "responsibilities": "Designing, developing front-end of web applications. Creating front-end for mobile devices(and mobile first approach, of course). Creating and developing components for huge CMS of insurance company. Improving web applications based on PHP"
+      "responsibilities": "Making a front-end for web applications based on plain JavaScript, Typescript, AngularJS. REST communication between front-end and back-end. Building systems involving Gulp and Webpack. Creating responsive web design for mobile devices. Designing components for insurance company commercial CMS. Code refactoring and fixes for systems based on PHP.",
+      "date": "07.2015 - 08.2017"
     },
     {
       "iconClass": "vcard",
-      "imgAlt": "Movie",
       "title": "Profit Network",
       "url": "http://www.profitnetwork.pl/",
       "position": "PHP Web Developer",
-      "responsibilities": "Development of administration panel for web application Tapon.pl based on commercial PHP Framework. Designing and development of database, server and client side for commercial squash league. Development of single page web applications based on commercial PHP Framework on server side and Bootstrap 3 on client side. Development of front-end for Tapon.pl facebook application."
+      "responsibilities": "Building back-end and front-end of administration panel for website Tapon.pl. Creating from scratch and development of database, back-end and front-end for commercial squash league in Warsaw. Developing single page applications based on commercial PHP Framework, plain JavaScript and Bootstrap. Building of front-end for Tapon.pl Facebook application.",
+      "date": "08.2014 - 06.2015"
     },
     {
       "iconClass": "vcard",
-      "imgAlt": "Location",
       "title": "Szafa.pl",
       "url": "http://grupaszafa.pl/",
       "position": "PHP Web Developer",
-      "responsibilities": "Development of administration panel tools for viewing statistics reports, complaints from users. Creation of functionality \"promo pin\", which allows users to keep their content in the top of content category.Creation of public(shared group). This is a group, that has few owners and many members. There users can send invitation to each other and share their content. Implementation of new graphical components in Zszywka.pl design (buttons, labels, fonts, logos, etc.)."
+      "responsibilities": "Building administration panel tools for viewing statistics reports and content editing for the graphical social network Zszywka.pl. Developing functionality of 'promo post', which allows users to keep their posts in the top of the related category. Creating back-end and front-end of users groups that allows to share content between members. Implementation of new graphical components in Zszywka.pl design (buttons, labels, fonts, logos, etc.).",
+      "date": "03.2014 - 07.2014"
     },
     {
       "iconClass": "vcard",
-      "imgAlt": "Picture",
       "title": "Ideo",
       "url": "http://www.ideo.pl/",
       "position": "Intern / PHP Web Developer",
-      "responsibilities": "My first job in field of Web Development. Making a front-end templates for internal commercial CMS system. Converting PSD templates to the HTML and CSS."
+      "responsibilities": "Converting PSD templates to the HTML and CSS. Implementing a new simple components for pages based to the internal CMS.",
+      "date": "11.2013 - 01.2014"
     },
     {
       "iconClass": "graduation-cap",
-      "imgAlt": "Movie",
       "title": "University of Information Technology and Management",
       "url": "http://kandydaci.wsiz.rzeszow.pl/en/lang.html",
-      "position": "Journalism and Social Communication. Master's degree."
+      "position": "Journalism and Social Communication. Master's degree.",
+      "date": "2012 - 2014"
     },
     {
       "iconClass": "graduation-cap",
-      "imgAlt": "Location",
       "title": "Kharkiv National University of Radioelectronics",
       "url": "http://nure.ua/en/",
-      "position": "Automation and Computer Integrated Technologies. Bachelor's degree"
+      "position": "Automation and Computer Integrated Technologies. Bachelor's degree.",
+      "date": "2008 - 2012"
     }
   ]
 }

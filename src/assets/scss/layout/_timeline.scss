@@ -95,6 +95,12 @@ Main components
   .fa {
     font-size: 30px;
   }
+
+  @media only screen and (max-width: 767px){
+    .fa {
+      font-size: 20px;
+    }
+  }
 }
 
 @media only screen and (min-width: 1170px) {

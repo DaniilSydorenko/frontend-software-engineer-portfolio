@@ -4,6 +4,8 @@ import { HttpModule } from '@angular/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AgmCoreModule } from '@agm/core';
+import { Angulartics2Module } from 'angulartics2';
+import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 
 /** Routing **/
 import { AppRouting } from './app.routing';
@@ -46,7 +48,8 @@ import { UserFormComponent } from './users/user-form/user-form.component';
     ScrollToModule.forRoot(),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyA4v_8kzUhXhYR6d7AvqedRKDfUYZkAovM'
-    })
+    }),
+    Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
   ],
   declarations: [
     AppComponent,

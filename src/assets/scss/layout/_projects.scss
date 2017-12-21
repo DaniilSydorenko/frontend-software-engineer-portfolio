@@ -105,7 +105,7 @@
         }
 
         &.project-prq {
-          @include img-url($img-url, "prq_2.png", center);
+          @include img-url($img-url, "prq_1.png", top);
           background-size: cover !important;
         }
 
@@ -157,6 +157,10 @@
               -webkit-transform: translate3d(0, -200%, 0);
               transform: translate3d(0, -200%, 0);
               text-align: center;
+              //border: 1px solid #d2d2e2;
+              //padding: 30px 40px;
+              //background: rgba(35, 51, 78, 0.5);
+              opacity: 0;
             }
 
             &-link {
@@ -194,6 +198,8 @@
               &-title {
                 opacity: 1;
                 transform: translate3d(0, 0, 0);
+                border: none;
+                background: transparent;
               }
 
               &-link {

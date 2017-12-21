@@ -6,13 +6,13 @@ Modules - reusable parts of our design
   width: 90%;
   max-width: 1170px;
   margin: 0 auto;
-}
 
-.cd-container::after {
-  /* clearfix */
-  content: '';
-  display: table;
-  clear: both;
+  &:after {
+    /* clearfix */
+    content: '';
+    display: table;
+    clear: both;
+  }
 }
 
 /* --------------------------------
@@ -207,30 +207,30 @@ Main components
   position: relative;
   margin-left: 60px;
   background: transparent;
-  /*border-radius: 0.25em;*/
   padding: 1em;
-  /* box-shadow: 0 3px 0 #d7e4ed; */
   color: #f1f1f1;
   border: 1px solid #f1f1f1;
-  /* font-size: 14px; */
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  h2 {
+    /*color: #303e49;*/
+  }
 }
 
-.cd-timeline-content:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.cd-timeline-content h2 {
-  /*color: #303e49;*/
-}
-
-.cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+.cd-timeline-content p,
+.cd-timeline-content .cd-read-more,
+.cd-timeline-content .cd-date {
   font-size: 13px;
   font-size: 0.8125rem;
 }
 
-.cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+.cd-timeline-content .cd-read-more,
+.cd-timeline-content .cd-date {
   display: inline-block;
 }
 
@@ -266,6 +266,26 @@ Main components
   width: 0;
   border: 7px solid transparent;
   border-right: 7px solid white;
+}
+
+@media only screen and (max-width: 767px) {
+  .cd-timeline-content {
+    p {
+      font-size: .9rem;
+
+      &.hide {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin: 0;
+      }
+    }
+
+    .show-more {
+      display: flex;
+      cursor: pointer;
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {

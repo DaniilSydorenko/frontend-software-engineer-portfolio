@@ -1,5 +1,6 @@
-import {Component} from '@angular/core';
-import {Headers, Http, Response} from '@angular/http';
+import { Component } from '@angular/core';
+import { Http } from '@angular/http';
+import { TimelineBlock } from '../shared/models/timeline-block';
 
 @Component({
   selector: 'app-home',
@@ -11,14 +12,10 @@ export class HomeComponent {
     this.getPublicDeals();
   }
 
-  url: any = 'assets/app.json';
+  url: any = 'assets/app.json'; // TODO move to const
   projects: any;
   skills: any;
-  timeline: any;
-
-  test(event: any) {
-    console.log(event.state);
-  }
+  timeline: TimelineBlock;
 
   getPublicDeals(): void {
     this.http

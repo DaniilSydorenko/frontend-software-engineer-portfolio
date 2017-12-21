@@ -33,11 +33,6 @@ import { AppProjectViewComponent } from './home/projects/project-view/project-vi
 import { AppSkillsComponent } from './home/skills/skills.component';
 import { AppSkillComponent } from './home/skills/skill/skill.component';
 
-/** Users Components **/
-import { UsersComponent } from './users/users.component';
-import { UserProfileComponent } from './users/user-profile/user-profile.component';
-import { UserFormComponent } from './users/user-form/user-form.component';
-
 @NgModule({
   imports: [
     BrowserModule,
@@ -69,9 +64,6 @@ import { UserFormComponent } from './users/user-form/user-form.component';
     AppProjectViewComponent,
     AppSkillsComponent,
     AppSkillComponent,
-    UsersComponent,
-    UserProfileComponent,
-    UserFormComponent,
   ],
   bootstrap: [AppComponent]
 })

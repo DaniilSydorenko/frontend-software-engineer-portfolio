@@ -75,38 +75,10 @@
         backface-visibility: hidden;
         background-size: 100%;
 
-        &.project-zszywka {
-          @include img-url($img-url, "zszywka_1.jpg");
-        }
-
-        &.project-i_sport {
-          @include img-url($img-url, "i_sport_2.jpg");
-          background-size: cover !important;
-          background-position-x: 50%;
-        }
-
-        &.project-tapon_fb_app {
-          @include img-url($img-url, "tapon_fb_app_1.jpg");
-          background-size: cover !important;
-          background-position-x: 50%;
-        }
-
-        &.project-folklor {
-          @include img-url($img-url, "folklor_1.jpg");
-        }
-
-        &.project-flex_mix {
-          @include img-url($img-url, "flex_mix_1.jpg");
-        }
-
-        &.project-one_web {
-          @include img-url($img-url, "one_web_1.jpg");
-          background-size: cover !important;
-        }
-
-        &.project-prq {
-          @include img-url($img-url, "prq_1.png", top);
-          background-size: cover !important;
+        @each $project in $project-list {
+          &.project-#{$project} {
+            @include project($img-url, "#{$project}.jpg");
+          }
         }
 
         .project-overlay {
@@ -157,9 +129,6 @@
               -webkit-transform: translate3d(0, -200%, 0);
               transform: translate3d(0, -200%, 0);
               text-align: center;
-              //border: 1px solid #d2d2e2;
-              //padding: 30px 40px;
-              //background: rgba(35, 51, 78, 0.5);
               opacity: 0;
             }
 
@@ -279,29 +248,7 @@
 
     // Mobile
     @media screen and (max-width: 767px) {
-      .project-zszywka {
-        @include img-url($img-url, "zszywka_1.jpg");
-        background-size: cover !important;
-        background-position-x: 50%;
-      }
-
-      .project-folklor {
-        @include img-url($img-url, "folklor_1.jpg");
-        background-size: cover !important;
-        background-position-x: 50%;
-      }
-
-      .project-flex_mix {
-        @include img-url($img-url, "flex_mix_1.jpg");
-        background-size: cover !important;
-        background-position-x: 50%;
-      }
-
-      .project-one_web {
-        @include img-url($img-url, "one_web_1.jpg");
-        background-size: cover !important;
-        background-position-x: 50%;
-      }
+      // Projects view for Mobile
     }
   }
 }

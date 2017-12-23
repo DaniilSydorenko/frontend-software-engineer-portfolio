@@ -42,8 +42,7 @@
   height: 100%;
 }
 
-@mixin img-url($img-url, $img-title, $position: top) {
+@mixin project($img-url, $img-title, $position: top, $size: cover) {
   background: url(unquote($img-url + $img-title)) $position no-repeat;
+  background-size: $size;
 }
-
-

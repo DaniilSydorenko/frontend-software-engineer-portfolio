@@ -284,6 +284,14 @@ Main components
     .show-more {
       display: flex;
       cursor: pointer;
+      border: thin solid #ccc;
+      text-align: center;
+      background: transparent;
+      justify-content: center;
+      margin: 10px 0 0 0;
+      padding: 2px;
+      font-size: 10px;
+      text-transform: uppercase;
     }
   }
 }

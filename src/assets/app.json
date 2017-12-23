@@ -8,20 +8,44 @@
         "title": "Ecovadis Portal",
         "role": "Front-end Developer",
         "description": "Registration application for Ecovadis Portal. Allow customers to create own account for their business.",
-        "responsibilities": "Front-end development",
+        "responsibilities": "Creating user interface components of application in React. Communication between components with shared state of application.",
         "techs": "JavaScript, React, Redux, Redux observable, Flow.js, Webpack, JSX, Styled Components, SASS"
       }
     },
     {
-      "path": "one_web",
+      "path": "bik_portal",
       "side": "left",
+      "url": "https://nowekonto.bik.pl/login",
+      "data": {
+        "title": "BIK Portal",
+        "role": "Front-end Developer",
+        "description": "BIK Portal needed to be aware of your financial situation, evaluate your chances for a credit or view your credit history.",
+        "responsibilities": "Developing front-end layer of BIK Portal. Implementing communication between front-end and back-end with REST API. Creating a Responsive Web Design for every page in application.",
+        "techs": "AngularJS, JavaScript, Gulp, HTML5, SASS, Bootstrap"
+      }
+    },
+    {
+      "path": "one_web",
+      "side": "right",
       "url": "https://www.allianz.pl/dla-ciebie/",
       "data": {
         "title": "Commercial CMS",
         "role": "Front-end Developer",
         "description": "UI components for internal commercial CMS. All internal product and web-sites of big European insurance company should have the same style and structure. Therefore all web-sites were built on components of this CMS.",
-        "responsibilities": "Front-end development for huge commercial CMS",
+        "responsibilities": "Building components of huge commercial CMS. Implementing components to the existing system, bug fixing and support.",
         "techs": "JavaScript, AngularJS, jQuery, JSON, Freemarker template, LESS, Flex"
+      }
+    },
+    {
+      "path": "contact_us",
+      "side": "left",
+      "url": "https://www.allianz.pl/kontakt-z-allianz/?partner=SNA010",
+      "data": {
+        "title": "Contact us",
+        "role": "Front-end Developer",
+        "description": "Contact us it is single page application that allow customers to contact with their insurance agents and inform about troubles.",
+        "responsibilities": "Building UI of application. Communication between front-end and back-end with REST API.",
+        "techs": "AngularJS, JavaScript, Gulp, HTML5, LESS, Flex, JSON"
       }
     },
     {
@@ -49,20 +73,8 @@
       }
     },
     {
-      "path": "tapon_fb_app",
-      "side": "right",
-      "url": "https://www.facebook.com/TapMoreGetMore/app/371913996253131/",
-      "data": {
-        "title": "Facebook App",
-        "role": "Front-end Developer",
-        "description": "Facebook application for web-site Tapon.pl",
-        "responsibilities": "Front-end development",
-        "techs": "HTML5, CSS3, JavaScript, jQuery, Facebook Development Tools"
-      }
-    },
-    {
       "path": "folklor",
-      "side": "left",
+      "side": "right",
       "url": "http://www.zajazdfolklor.pl/",
       "data": {
         "title": "Zajazd Folklor",
@@ -74,7 +86,7 @@
     },
     {
       "path": "zszywka",
-      "side": "right",
+      "side": "left",
       "url": "http://zszywka.pl/",
       "data": {
         "title": "Zszywka",

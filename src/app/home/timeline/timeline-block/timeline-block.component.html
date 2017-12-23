@@ -6,9 +6,9 @@
         <h2>{{timelineBlock.title}}</h2>
         <h4>{{timelineBlock.position}}</h4>
         <p [ngClass]="{'hide': toggleBlock}">{{timelineBlock.responsibilities}}</p>
-        <span *ngIf="timelineBlock.responsibilities && showMore" class="show-more" (click)="toggleBlock = !toggleBlock">
+        <div *ngIf="timelineBlock.responsibilities && showMore" class="show-more" (click)="toggleBlock = !toggleBlock">
           <strong>{{toggleBlock ? 'Show more' : 'Show less'}}</strong>
-        </span>
+        </div>
         <span class="cd-date">{{timelineBlock.date}}</span>
     </div>
 </div>

@@ -134,14 +134,27 @@
 
             &-link {
               padding: 10px 20px;
-              transition: all, 0.5s;
-              -webkit-transform: translate3d(0, 200%, 0);
+              transition: all 0.5s ease;
               transform: translate3d(0, 200%, 0);
+              position: relative;
+              overflow: hidden;
 
               &-text {
-                color: #ffffff !important;
+                color: #ffffff;
                 font-size: 1.1rem;
                 opacity: 0;
+              }
+
+              &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: #e1e3ec;
+                transition: all 350ms ease;
+                z-index: -1;
               }
             }
           }
@@ -172,7 +185,7 @@
               }
 
               &-link {
-                transition: all, 0.5s;
+                transition: all 0.35s ease;
                 -webkit-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0);
                 border: thin solid #fff;
@@ -185,8 +198,14 @@
 
                 &:active,
                 &:hover {
-                  transition: all, 0.5s;
-                  box-shadow: 0 0 0 1px #ffffff;
+                  span {
+                    transition: all 0.35s ease;
+                    color: #414141 !important;
+                  }
+
+                  &:before {
+                    left: 0;
+                  }
                 }
 
                 &-text {

@@ -19,6 +19,7 @@ import { MenuComponent } from './shared/components/header/menu/menu.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { ContactFormComponent } from './shared/components/footer/contact-form/contact-form.component';
 import { GoogleMapComponent } from './shared/components/footer/google-map/google-map.component';
+import { DataLoaderService } from './shared/services/data-loader.service';
 
 /** Home Components **/
 import { HomeComponent } from './home/home.component';
@@ -65,6 +66,7 @@ import { AppSkillComponent } from './home/skills/skill/skill.component';
     AppSkillsComponent,
     AppSkillComponent,
   ],
+  providers: [DataLoaderService],
   bootstrap: [AppComponent]
 })
 

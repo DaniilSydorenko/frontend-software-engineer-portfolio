@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, ElementRef, HostListener, OnInit, Renderer2, AfterViewInit} from '@angular/core';
 import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scroll-to';
 
 @Component({
@@ -6,14 +6,19 @@ import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scrol
     templateUrl: 'header.component.html'
 })
 
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, AfterViewInit {
   state = false;
   buttonLines: Array<number> = [1, 2, 3, 4, 5, 6];
   lastScrollVal: number;
+  header: HTMLElement;
 
-  constructor(private _scrollToService: ScrollToService) { }
+  constructor(private _scrollToService: ScrollToService, private el: ElementRef, private renderer: Renderer2) { }
 
   ngOnInit() { }
+
+  ngAfterViewInit() {
+    this.header = this.el.nativeElement.children[0];
+  }
 
   public triggerScrollTo(scrollTo) { // TODO to helper ?
     const config: ScrollToConfigOptions = {
@@ -22,21 +27,17 @@ export class HeaderComponent implements OnInit {
     this._scrollToService.scrollTo(config);
   }
 
-  getCurrentScroll (): number { // TODO to helper ?
+  public getCurrentScroll (): number { // TODO to helper ?
     return window.pageYOffset || document.documentElement.scrollTop;
   }
 
   @HostListener('window:scroll', ['$event'])
-
-  onScrollEvent($event) {
-    const header = document.getElementsByClassName('header')[0];
-
+  onScrollEvent() {
     if (this.lastScrollVal < this.getCurrentScroll()) {
-      header.classList.add('shrink');
+      this.renderer.addClass(this.header, 'shrink');
     } else {
-      header.classList.remove('shrink');
+      this.renderer.removeClass(this.header, 'shrink');
     }
-
     this.lastScrollVal = this.getCurrentScroll();
   }
 

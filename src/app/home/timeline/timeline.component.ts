@@ -1,12 +1,21 @@
-import { Component, Input, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { DataLoaderService } from '../../shared/services/data-loader.service';
+import { TimelineBlock } from '../../shared/models/timeline-block';
 
 @Component({
   selector: 'app-timeline',
   templateUrl: 'timeline.component.html',
 })
 
-export class AppTimelineComponent {
-  @Input() timeline: any;
+export class AppTimelineComponent implements OnInit {
+  timeline: Array<TimelineBlock>;
+
+  constructor(private _dataLoaderService: DataLoaderService) { }
+
+  ngOnInit() {
+    this._dataLoaderService.getPortfolioData('timeline')
+      .subscribe(data => this.timeline = data);
+  }
 
   @HostListener('window:scroll', ['$event'])
   onScrollEvent($event) {

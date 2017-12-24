@@ -7,7 +7,8 @@ import { TimelineBlock } from '../../../shared/models/timeline-block';
 })
 
 export class AppTimelineBlockComponent implements OnInit {
-  @Input() timelineBlock: TimelineBlock;
+  @Input()
+  timelineBlock: TimelineBlock;
 
   toggleBlock = true;
   showMore: boolean;

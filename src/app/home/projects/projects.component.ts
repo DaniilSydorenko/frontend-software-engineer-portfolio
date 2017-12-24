@@ -1,4 +1,6 @@
-import { Component, Input, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { Project } from '../../shared/models/project';
+import { DataLoaderService } from '../../shared/services/data-loader.service';
 
 @Component({
     selector: 'app-projects',
@@ -6,13 +8,15 @@ import { Component, Input, HostListener, OnInit } from '@angular/core';
 })
 
 export class AppProjectsComponent implements OnInit {
-  @Input() projects: any;
-
+  projects: Array<Project>;
   projectSections: any = document.getElementsByClassName('section-content');
 
-  constructor() {}
+  constructor(private _dataLoaderSerice: DataLoaderService) { }
 
   ngOnInit() {
+    this._dataLoaderSerice.getPortfolioData('projects')
+      .subscribe(data => this.projects = data);
+
     // const projectBgSide: Element = document.querySelector('.bg-side');
 
     // if (window.innerWidth < 768) {
@@ -63,7 +67,6 @@ export class AppProjectsComponent implements OnInit {
   }
 
   @HostListener('window:scroll', ['$event'])
-
   onScrollEvent($event) {
     const projectSections = document.getElementsByClassName('section-content');
     const scrollFromTop = window.scrollY;

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AgmCoreModule } from '@agm/core';
@@ -39,7 +39,7 @@ import { AppSkillComponent } from './home/skills/skill/skill.component';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpModule,
+    HttpClientModule,
     AppRouting,
     ScrollToModule.forRoot(),
     AgmCoreModule.forRoot({

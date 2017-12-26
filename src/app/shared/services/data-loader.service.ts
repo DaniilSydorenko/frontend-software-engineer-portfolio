@@ -10,7 +10,7 @@ export class DataLoaderService {
   constructor(private _http: HttpClient) { }
 
   public getPortfolioData(section: string = null): Observable<any> {
-    return this._http.get(Settings.API_ENDPOINT + section)
+    return this._http.get(Settings.API_ENDPOINT)
       .map(data => (section) ? data[section] : data);
   }
 }

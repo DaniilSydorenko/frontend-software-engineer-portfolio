@@ -1,0 +1,58 @@
+{
+  "timeline": [
+    {
+      "iconClass": "vcard",
+      "title": "EcoVadis",
+      "url": "http://www.ecovadis.com/",
+      "position": "Front-end JavaScript Developer",
+      "responsibilities": "Developing single page application based on React & Redux. Building the UI components (desktop and mobile) with React(JSX), SASS. Creating tests for React components with Enzyme. Being a part of the team located in Warsaw, Paris, Tunis using Scrum.",
+      "date": "09.2017 - 11.2017"
+    },
+    {
+      "iconClass": "vcard",
+      "title": "Primaris",
+      "url": "http://primaris.eu/",
+      "position": "Front-end JavaScript Developer",
+      "responsibilities": "Making a front-end for web applications based on plain JavaScript, Typescript, AngularJS. REST communication between front-end and back-end. Building systems involving Gulp and Webpack. Creating responsive web design for mobile devices. Designing components for insurance company commercial CMS. Code refactoring and fixes for systems based on PHP.",
+      "date": "07.2015 - 08.2017"
+    },
+    {
+      "iconClass": "vcard",
+      "title": "Profit Network",
+      "url": "http://www.profitnetwork.pl/",
+      "position": "PHP Web Developer",
+      "responsibilities": "Building back-end and front-end of administration panel for website Tapon.pl. Creating from scratch and development of database, back-end and front-end for commercial squash league in Warsaw. Developing single page applications based on commercial PHP Framework, plain JavaScript and Bootstrap. Building of front-end for Tapon.pl Facebook application.",
+      "date": "08.2014 - 06.2015"
+    },
+    {
+      "iconClass": "vcard",
+      "title": "Szafa.pl",
+      "url": "http://grupaszafa.pl/",
+      "position": "PHP Web Developer",
+      "responsibilities": "Building administration panel tools for viewing statistics reports and content editing for the graphical social network Zszywka.pl. Developing functionality of 'promo post', which allows users to keep their posts in the top of the related category. Creating back-end and front-end of users groups that allows to share content between members. Implementation of new graphical components in Zszywka.pl design (buttons, labels, fonts, logos, etc.).",
+      "date": "03.2014 - 07.2014"
+    },
+    {
+      "iconClass": "vcard",
+      "title": "Ideo",
+      "url": "http://www.ideo.pl/",
+      "position": "Intern / PHP Web Developer",
+      "responsibilities": "Converting PSD templates to the HTML and CSS. Implementing a new simple components for pages based to the internal CMS.",
+      "date": "11.2013 - 01.2014"
+    },
+    {
+      "iconClass": "graduation-cap",
+      "title": "University of Information Technology and Management",
+      "url": "http://kandydaci.wsiz.rzeszow.pl/en/lang.html",
+      "position": "Journalism and Social Communication. Master's degree.",
+      "date": "2012 - 2014"
+    },
+    {
+      "iconClass": "graduation-cap",
+      "title": "Kharkiv National University of Radioelectronics",
+      "url": "http://nure.ua/en/",
+      "position": "Automation and Computer Integrated Technologies. Bachelor's degree.",
+      "date": "2008 - 2012"
+    }
+  ]
+}

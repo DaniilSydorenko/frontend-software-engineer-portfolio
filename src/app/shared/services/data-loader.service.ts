@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Settings } from '../constants/index';
+import { getApiEndpoint } from '../constants/index';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
@@ -10,7 +10,7 @@ export class DataLoaderService {
   constructor(private _http: HttpClient) { }
 
   public getPortfolioData(section?: string): Observable<any> {
-    return this._http.get(Settings.API_ENDPOINT)
+    return this._http.get(getApiEndpoint(section))
       .map(data => (section) ? data[section] : data);
   }
 }

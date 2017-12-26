@@ -1,0 +1,58 @@
+{
+  "skills": [
+    {
+      "path": "back_end",
+      "skillHeader": "Back-end",
+      "skillIcon": "icon icon-tools-2",
+      "skillSubHeader": "PHP, MySQL, Node.js",
+      "skillText": "MVC, PHP OOP, Laravel, Symfony, Codeigniter, Doctrine, PDO, Wordpress",
+      "duration": "0.3s",
+      "delay": "0.2s"
+    },
+    {
+      "path": "front_end",
+      "skillHeader": "Front-end",
+      "skillIcon": "icon icon-mobile",
+      "skillSubHeader": "JavaScript, SASS, LESS",
+      "skillText": "Standards ES5 and ES6, Typescript, Angular, jQuery, AJAX, Bootstrap, Flex",
+      "duration": "0.4s",
+      "delay": "0.3s"
+    },
+    {
+      "path": "aut_tools",
+      "skillHeader": "Automation tools",
+      "skillIcon": "icon icon-gears",
+      "skillSubHeader": "GULP, NPM, Composer",
+      "skillText": "Bower, WebPack, Babel, Files minification, BrowserSync",
+      "duration": "0.5s",
+      "delay": "0.4s"
+    },
+    {
+      "path": "usability",
+      "skillHeader": "Usability",
+      "skillIcon": "icon icon-tools",
+      "skillSubHeader": "Mobile first approach",
+      "skillText": "Responsive Web Design, Cross-browser compatibility, Media queries",
+      "duration": "0.6s",
+      "delay": "0.5s"
+    },
+    {
+      "path": "browser_tools",
+      "skillHeader": "Browser DevTools",
+      "skillIcon": "icon icon-browser",
+      "skillSubHeader": "Firefox, Chrome, IE10",
+      "skillText": "Element inspecting, Network, Debugging, Local Storage, Sources",
+      "duration": "0.7s",
+      "delay": "0.6s"
+    },
+    {
+      "path": "version_control",
+      "skillHeader": "Version  Control",
+      "skillIcon": "icon icon-linegraph",
+      "skillSubHeader": "GIT, SVN",
+      "skillText": "GitHub, GitHub Pages, Git Bash, Git features, Tortoise SVN, Gerrit",
+      "duration": "0.8s",
+      "delay": "0.7s"
+    }
+  ]
+}

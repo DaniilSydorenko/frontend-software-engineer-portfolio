@@ -1,3 +1,7 @@
-export class Settings {
-  public static API_ENDPOINT = 'assets/app.json';
-}
+const API_ENDPOINT = 'data/';
+
+const getApiEndpoint = (section: string): string => {
+  return `${API_ENDPOINT}${section}.json`;
+};
+
+export { getApiEndpoint };

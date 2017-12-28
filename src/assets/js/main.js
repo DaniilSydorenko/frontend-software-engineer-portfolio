@@ -17,15 +17,6 @@ $(document).ready(function () {
   App.init();
 });
 
-/**
- * Basic application object
- * Has all needed functionality:
- *  - Video bg
- *  - Header
- *  - Timeline
- *  - Projects
- **/
-
 const App = {
 
   /* DOM selectors */
@@ -38,26 +29,11 @@ const App = {
   imgFix: $('.img-fix'),
   mobileWidth: window.matchMedia("(max-width: 767px)"),
 
-  /* Components */
-  hamburger: $(".menu-btn-wrapper"),
-
   /* Viewport/Window params */
   ih: window.innerHeight,
   oh: window.outerHeight,
   iw: window.innerWidth,
   ow: window.outerWidth,
-
-  /* Const values */
-  shrinkHeader: 700,
-
-  /* Timeline */
-  timelineBlock: $('.cd-timeline-block'),
-  timelineContent: $('.cd-timeline-content'),
-  timelineImg: $('.cd-timeline-img'),
-  timelineOffset: 0.8,
-
-  /* Contact form */
-  inputField: $(".input-field"),
 
   /**
    * Video background

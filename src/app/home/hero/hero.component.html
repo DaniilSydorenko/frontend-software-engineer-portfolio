@@ -1,11 +1,13 @@
-<section id="section1" class="homepage-hero-module">
+<section id="home" class="homepage-hero-module">
     <div class="hero-text-container flex-box">
         <div class="hero-text">
-            <h1>Hi, I`m Daniil</h1>
-            <h4>Front-End Developer | Inspired by Web</h4>
+            <h1 class="hero-text__header">
+              <span>{{ 'Hi, I am Daniil' | translate:param }}</span><span class="hero-text__header-name"></span>
+            </h1>
+            <h4 class="hero-text__position">Front-End Developer | Inspired by Web</h4>
         </div>
         <div class="hero-text">
-            <a class="arrow-down" href="#cd-timeline" (click)="triggerScrollTo('cd-timeline')">
+            <a class="arrow-down" href="#timeline" (click)="triggerScrollTo('timeline')">
               <img height="100px" class="pulse" src="assets/img/mouse_down.svg" alt="">
             </a>
         </div>

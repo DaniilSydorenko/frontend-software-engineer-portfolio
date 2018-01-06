@@ -5,7 +5,7 @@
   background: transparent;
 
   .contact-content {
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 
     &.light-content {
       background: #fcfcfc;
@@ -14,7 +14,6 @@
     &.dark-content {
       background: transparent;
     }
-
   }
 
   .social-content {
@@ -61,17 +60,12 @@
         font-size: 1rem;
       }
 
-      .footer-copyright {
-
-      }
-
       .footer-made {
         span {
           color: #ff6b6a;
           padding: 0 1px;
         }
       }
-
     }
   }
 }

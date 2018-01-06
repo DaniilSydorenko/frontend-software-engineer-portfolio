@@ -8,14 +8,12 @@ import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scrol
 
 export class MenuComponent {
   @Input() state: any;
-
-  @Output()
-  stateEmitter = new EventEmitter();
+  @Output() stateEmitter = new EventEmitter();
 
   constructor(private _scrollToService: ScrollToService) { }
 
-  toggleResponsiveMobileMenu(home: HTMLElement, menuItem: NodeListOf<Element>, menuContainer: HTMLElement) {
-    if (home.classList.contains('display')) {
+  toggleResponsiveMobileMenu(menuItem: NodeListOf<Element>, menuContainer: HTMLElement) {
+    if (menuContainer.classList.contains('display')) {
       setTimeout(function () {
 
         setTimeout(function () {
@@ -72,13 +70,11 @@ export class MenuComponent {
   }
 
   toggleMenu() {
-    this.stateEmitter.emit({ state: this.state = !this.state });
-
     const menuItem = <NodeListOf<Element>>document.querySelectorAll('.mobileMenu li');
     const menuContainer = <HTMLElement>document.querySelector('.responsiveMobileMenu');
-    const home = <HTMLElement>document.querySelector('#home');
 
-    this.toggleResponsiveMobileMenu(home, menuItem, menuContainer);
+    this.stateEmitter.emit({ state: this.state = !this.state });
+    this.toggleResponsiveMobileMenu(menuItem, menuContainer);
   }
 
   public triggerScrollTo(scrollTo) {

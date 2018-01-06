@@ -19,7 +19,7 @@ Modules - reusable parts of our design
 Main components
 -------------------------------- */
 
-#cd-timeline {
+#timeline {
   position: relative;
   padding: 0 0 3em 0;
   margin-bottom: 2em;
@@ -37,7 +37,7 @@ Main components
 }
 
 @media only screen and (min-width: 1170px) {
-  #cd-timeline {
+  #timeline {
     margin-bottom: 3em;
 
     &::before {

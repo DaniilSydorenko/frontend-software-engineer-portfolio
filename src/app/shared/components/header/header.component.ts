@@ -41,8 +41,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     this.lastScrollVal = this.getCurrentScroll();
   }
 
-  toggleResponsiveMobileMenu(home: HTMLElement, menuItem: NodeListOf<Element>, menuContainer: HTMLElement) {
-    if (home.classList.contains('display')) {
+  toggleResponsiveMobileMenu(menuItem: NodeListOf<Element>, menuContainer: HTMLElement) {
+    if (menuContainer.classList.contains('display')) {
       setTimeout(function () {
 
         setTimeout(function () {
@@ -98,12 +98,10 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   }
 
   toggleMenu() {
-    this.state = !this.state;
-
     const menuItem = <NodeListOf<Element>>document.querySelectorAll('.mobileMenu li');
     const menuContainer = <HTMLElement>document.querySelector('.responsiveMobileMenu');
-    const home = <HTMLElement>document.querySelector('#home');
 
-    this.toggleResponsiveMobileMenu(home, menuItem, menuContainer);
+    this.state = !this.state;
+    this.toggleResponsiveMobileMenu(menuItem, menuContainer);
   }
 }

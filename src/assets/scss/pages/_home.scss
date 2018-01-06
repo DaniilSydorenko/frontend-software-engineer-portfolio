@@ -75,17 +75,18 @@
       z-index: 3;
 
       * {
-        font-weight: 300;
         text-transform: uppercase;
       }
 
-      h1 {
-        font-size: 3rem;
+      &__header {
+        font-weight: 900;
+        font-size: 3.5rem;
         margin: 0;
         padding: 5rem 0;
+        color: #ffffff;
       }
 
-      h4 {
+      &__position {
         font-size: 1.7rem;
         margin: 0;
         padding: 3rem 0;
@@ -133,7 +134,7 @@
   }
 }
 
-#cd-timeline {
+#timeline {
   background: #383F42;
   padding-top: 0;
 }

@@ -1,7 +1,7 @@
 import * as $ from 'jquery';
 import * as typelessPackage from 'wowjs';
 import { WOW } from 'wowjs/dist/wow';
-new WOW().init();
+// new WOW().init();
 import * as vide from 'vide';
 
 
@@ -84,7 +84,7 @@ const App = {
     /**
      * Wow init
      */
-    new WOW().init();
+    // new WOW().init();
 
     this.initBannerVideoSize();
 

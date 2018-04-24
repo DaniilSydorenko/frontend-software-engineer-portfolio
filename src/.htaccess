@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.daniilsydorenko\.com$
+RewriteRule ^/?$ "http\:\/\/daniilsydorenko\.com\/" [R=301,L]

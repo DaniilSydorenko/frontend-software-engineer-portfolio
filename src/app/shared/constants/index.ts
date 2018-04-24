@@ -1,5 +1,5 @@
 const API_ENDPOINT = 'data/';
-const FREEGEOIP_URL = 'http://freegeoip.net/json/';
+const FREEGEOIP_URL = 'https://api.ipdata.co/';
 
 const getApiEndpoint = (section: string): string => {
   return `${API_ENDPOINT}${section}.json`;

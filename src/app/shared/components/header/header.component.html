@@ -5,10 +5,9 @@
               D<span class="logo-name__text__rest-text">aniil Sydorenko</span>
             </a>
         </div>
-        <div id="nav-icon2" class="menu-btn-wrapper" (click)="toggleMenu($event)" [ngClass]="{ 'open': state }">
+        <div id="nav-icon2" class="menu-btn-wrapper" (click)="toggleMenu()" [ngClass]="{ 'open': state }">
             <span class="menu-btn-line" *ngFor="let n of buttonLines"></span>
         </div>
     </nav>
 </header>
-
-<app-menu [state]="state" (stateEmitter)="toggleMenu($event)"></app-menu>
+<app-menu [state]="state" (stateEmitter)="toggleMenu()"></app-menu>

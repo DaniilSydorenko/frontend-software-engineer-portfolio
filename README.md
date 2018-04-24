@@ -1,1 +1,5 @@
-# Portfolio rewritten on Angular 4
+Frontend Software Engineer Portfolio
+========
+
+## Angular-CLI
+### Angular v.5

@@ -1,11 +1,11 @@
 <header class="header animated">
     <nav class="nav-transparent flex-box">
         <div class="logo-name">
-            <a href="#home" class="logo-name__text" (click)="triggerScrollTo('home')">
+            <a class="logo-name__text" (click)="triggerScrollTo('home')">
               D<span class="logo-name__text__rest-text">aniil Sydorenko</span>
             </a>
         </div>
-        <div id="nav-icon2" class="menu-btn-wrapper" (click)="toggleMenu()" [ngClass]="{ 'open': state }">
+        <div class="menu-btn-wrapper" (click)="toggleMenu()" [ngClass]="{ 'open': state }">
             <span class="menu-btn-line" *ngFor="let n of buttonLines"></span>
         </div>
     </nav>

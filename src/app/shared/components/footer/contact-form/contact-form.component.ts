@@ -4,7 +4,8 @@ import { Message } from '../../../models/message';
 
 @Component({
     selector: 'app-contact-form',
-    templateUrl: 'contact-form.component.html'
+    templateUrl: 'contact-form.component.html',
+    styleUrls: ['./contact-form.component.scss'],
 })
 
 export class ContactFormComponent {

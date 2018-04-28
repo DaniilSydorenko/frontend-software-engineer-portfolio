@@ -1,4 +1,4 @@
-import {Component, ElementRef, HostListener, OnInit, Renderer2, AfterViewInit} from '@angular/core';
+import {Component, ElementRef, HostListener, Renderer2, AfterViewInit} from '@angular/core';
 import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scroll-to';
 
 @Component({
@@ -6,15 +6,13 @@ import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scrol
     templateUrl: 'header.component.html'
 })
 
-export class HeaderComponent implements OnInit, AfterViewInit {
+export class HeaderComponent implements AfterViewInit {
   state = false;
   buttonLines: Array<number> = [1, 2, 3, 4, 5, 6];
   lastScrollVal: number;
   header: HTMLElement;
 
   constructor(private _scrollToService: ScrollToService, private el: ElementRef, private renderer: Renderer2) { }
-
-  ngOnInit() { }
 
   ngAfterViewInit() {
     this.header = this.el.nativeElement.children[0];

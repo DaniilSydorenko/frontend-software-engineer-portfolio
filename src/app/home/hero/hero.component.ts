@@ -2,10 +2,6 @@ import { Component, AfterViewInit } from '@angular/core';
 import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scroll-to';
 import { TranslateService } from '@ngx-translate/core';
 import { IpInfoService } from '../../shared/services/ip-info.service';
-import { VisitorData } from '../../shared/models/visitor-data';
-// import * as $ from 'jquery';
-// import * as vide from 'vide';
-// import * as typelessPackage from 'wowjs';
 import { WOW } from 'wowjs/dist/wow';
 
 @Component({
@@ -16,7 +12,6 @@ import { WOW } from 'wowjs/dist/wow';
 
 export class AppHeroComponent implements AfterViewInit {
   param: any = { value: 'world' };
-  visitorData: Array<VisitorData>;
   greeting: string;
 
   constructor(private _scrollToService: ScrollToService, private _ipInfoService: IpInfoService, translate: TranslateService) {

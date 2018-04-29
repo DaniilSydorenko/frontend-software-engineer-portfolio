@@ -18,12 +18,9 @@
 
   /* Text on the middle of hero page */
   .hero-text-container {
-    //@include flex-box(space-around, center, center, column, wrap);
-
     display: flex;
     align-content: center;
     align-items: center;
-    //justify-content: center;
     justify-content: space-around;;
     height: 100%;
     flex-direction: column;
@@ -67,7 +64,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: #000;
+    background: #000 url("../../../assets/img/snapshot/Aloha-Mundo.jpg");
 
     .poster {
       display: none;

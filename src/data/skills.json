@@ -13,8 +13,8 @@
       "path": "front_end",
       "skillHeader": "Front-end",
       "skillIcon": "icon icon-mobile",
-      "skillSubHeader": "JavaScript, SASS, LESS",
-      "skillText": "Standards ES5 and ES6, Typescript, Angular, jQuery, AJAX, Bootstrap, Flex",
+      "skillSubHeader": "JavaScript, Typescript",
+      "skillText": "React, Angular, jQuery, AJAX, SASS, LESS, Bootstrap, Flex",
       "duration": "0.4s",
       "delay": "0.3s"
     },

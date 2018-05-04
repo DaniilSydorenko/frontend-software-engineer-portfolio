@@ -18,6 +18,7 @@ export class AppHeroComponent implements AfterViewInit {
     this.greeting = 'Hi, I am Daniil';
     translate.setDefaultLang('us');
 
+    // TODO List of country_codes and check
     _ipInfoService.getVisitorData()
       .subscribe(data => {
         translate.use(data.country_code.toLowerCase());

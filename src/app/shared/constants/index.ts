@@ -9,7 +9,10 @@ const getFreeGeoIpUrl = (): string => {
   return IPDATA_URL;
 };
 
+const languagesList = () => new Set(['br', 'de', 'es', 'fr', 'id', 'in', 'it', 'nl', 'pl', 'pt', 'ru', 'ua', 'us']);
+
 export {
   getApiEndpoint,
   getFreeGeoIpUrl,
+  languagesList
 };

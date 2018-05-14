@@ -1,20 +1,18 @@
 <footer id="contact" class="footer">
 
     <section class="contact-content light-content">
-
         <div class="section-header d-header">
             <h2>Contact</h2>
         </div>
-
         <div class="container">
             <div class="row">
-                <!-- Contact Form -->
-                <app-contact-form (messageCreated)="onMessageCreated($event)"
-                                  [ngClass]="['col-lg-6', 'col-md-6', 'col-sm-12', 'col-xs-12']">
+                <app-contact-form
+                    (messageCreated)="onMessageCreated($event)"
+                    [ngClass]="['col-lg-6', 'col-md-6', 'col-sm-12', 'col-xs-12']">
                 </app-contact-form>
-
-                <!-- Google Map -->
-                <app-google-map [ngClass]="['google-map', 'col-lg-6', 'col-md-6', 'col-sm-12', 'col-xs-12']"></app-google-map>
+                <app-google-map
+                    [ngClass]="['google-map', 'col-lg-6', 'col-md-6', 'col-sm-12', 'col-xs-12']">
+                </app-google-map>
             </div>
         </div>
     </section>
@@ -22,7 +20,6 @@
     <section class="social-content">
         <div class="container">
             <div class="row center-xs">
-
                 <div class="fadeInUp wow animated">
                     <div class="social-links-content">
                         <span class="social-links">
@@ -48,19 +45,15 @@
                         </span>
                     </div>
                     <div class="footer-text">
-                        <!-- Copyright -->
                         <div class="footer-copyright">
-                            <p>&copy; Daniil Sydorenko {{ copyYear() }}</p>
+                            <p>&copy; Daniil Sydorenko {{ year }}</p>
                         </div>
-
-                        <!-- Made with -->
                         <div class="footer-made">
                             <p>Made with <span><i class="fa fa-heart"></i></span>
                                 for future, technologies and trip to Tibet.</p>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>

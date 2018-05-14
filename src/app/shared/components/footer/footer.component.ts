@@ -2,17 +2,18 @@ import { Component } from '@angular/core'
 
 @Component({
     selector: 'app-footer',
-    templateUrl: 'footer.component.html'
+    templateUrl: 'footer.component.html',
+    styleUrls: ['./footer.component.scss']
 })
 
 export class FooterComponent {
-  copyYear(): number {
-    const date = new Date();
-    return date.getFullYear();
+  year: number;
+
+  constructor() {
+    this.year = new Date().getFullYear();
   }
 
   onMessageCreated(event: any) {
       console.log(event.message);
   }
 }
-

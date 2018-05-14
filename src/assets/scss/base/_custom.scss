@@ -1,3 +1,33 @@
 // -----------------------------------------------------------------------------
 // This file contains very user custom styles.
 // -----------------------------------------------------------------------------
+
+.flex-box {
+  @include flex-box(center, center, center, row, wrap)
+}
+
+.section-header {
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  padding: 50px;
+
+  &.d-header {
+    > h2 {
+      color: #414141;
+    }
+  }
+
+  &.l-header {
+    > h2 {
+      color: #f9f9f9;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 300;
+  }
+}

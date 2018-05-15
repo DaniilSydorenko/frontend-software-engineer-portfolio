@@ -3,7 +3,8 @@ import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scrol
 
 @Component({
     selector: 'app-header',
-    templateUrl: 'header.component.html'
+    templateUrl: 'header.component.html',
+    styleUrls: ['./header.component.scss']
 })
 
 export class HeaderComponent implements AfterViewInit {

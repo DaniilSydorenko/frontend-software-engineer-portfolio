@@ -99,7 +99,6 @@ export class HeaderComponent implements AfterViewInit {
   toggleMenu() {
     const menuItem = <NodeListOf<Element>>document.querySelectorAll('.mobileMenu li');
     const menuContainer = <HTMLElement>document.querySelector('.responsiveMobileMenu');
-
     this.state = !this.state;
     this.toggleResponsiveMobileMenu(menuItem, menuContainer);
   }

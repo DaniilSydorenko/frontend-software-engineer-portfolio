@@ -24,6 +24,7 @@ import { GoogleMapComponent } from './shared/components/footer/google-map/google
 import { DataLoaderService } from './shared/services/data-loader.service';
 import { PreloaderComponent } from './shared/components/preloader/preloader.component';
 import { IpInfoService } from './shared/services/ip-info.service';
+import { MenuService } from './shared/services/menu.service';
 
 /** Home Components **/
 import { HomeComponent } from './home/home.component';
@@ -82,7 +83,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppSkillComponent,
     PreloaderComponent,
   ],
-  providers: [DataLoaderService, IpInfoService],
+  providers: [DataLoaderService, IpInfoService, MenuService],
   bootstrap: [AppComponent]
 })
 

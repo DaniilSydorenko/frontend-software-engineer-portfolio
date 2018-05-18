@@ -25,14 +25,14 @@ export class HeaderComponent implements AfterViewInit {
     this.header = this.el.nativeElement.children[0];
   }
 
-  public triggerScrollTo(scrollTo) { // TODO to helper ?
+  public triggerScrollTo(scrollTo) {
     const config: ScrollToConfigOptions = {
       target: scrollTo
     };
     this._scrollToService.scrollTo(config);
   }
 
-  public getCurrentScroll (): number { // TODO to helper ?
+  public getCurrentScroll (): number {
     return window.pageYOffset || document.documentElement.scrollTop;
   }
 

@@ -19,7 +19,6 @@ export class MenuComponent {
   toggleMenu() {
     const menuItem = <NodeListOf<Element>>document.querySelectorAll('.mobileMenu li');
     const menuContainer = <HTMLElement>document.querySelector('.responsiveMobileMenu');
-
     this.stateEmitter.emit({ state: this.state = !this.state });
     this._menuService.toggleResponsiveMobileMenu(menuItem, menuContainer);
   }

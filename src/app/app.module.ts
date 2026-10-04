@@ -52,7 +52,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppRouting,
     ScrollToModule.forRoot(),
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyA4v_8kzUhXhYR6d7AvqedRKDfUYZkAovM'
+      apiKey: ''
     }),
     Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
     TranslateModule.forRoot({
